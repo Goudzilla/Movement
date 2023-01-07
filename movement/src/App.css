@@ -1,0 +1,1078 @@
+.App {
+  text-align: center;
+  font-family: "Raleway";
+  font-weight: 1000;
+  flex-direction: column;
+  background-color: black;
+  max-width: 100vw;
+  display: flex;
+}
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+.App-logo {
+  height: 15vmin;
+  pointer-events: none;
+}
+.goal {
+  font-size: 1.3em;
+  font-style: bold;
+  text-shadow: 3px 3px 5px #333;
+  color: goldenrod;
+}
+.aboutMe {
+  text-align: center;
+  font-size: 0.9em;
+  font-style: bold;
+  margin-top: -0.5em;
+  color: rgb(34, 45, 17);
+}
+.App-title {
+  font-family: "CoventryGarden";
+  font-size: 3.5em;
+  font-style: bold;
+  letter-spacing: 0.02em;
+  text-shadow: 3px 3px 5px #333;
+  text-decoration: none;
+  font: white;
+}
+@font-face {
+  font-family: "CoventryGarden";
+  src: url("./CoventryGardenNF.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("./Raleway.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Kamikaze";
+  src: url("./osaka-re.ttf") format("truetype");
+}
+@font-face {
+  font-family: "CatCafe";
+  src: url("./catcafe.medium.ttf") format("truetype");
+}
+@keyframes color-change {
+  0% {
+    color: rgb(255, 0, 0);
+  }
+  17% {
+    color: #b35c00;
+  }
+  34% {
+    color: #00ff3c;
+  }
+  51% {
+    color: #b3b300;
+  }
+  68% {
+    color: #00ff3c;
+  }
+  85% {
+    color: #b35c00;
+  }
+  100% {
+    color: rgb(255, 0, 0);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@keyframes myanimation {
+  from {
+    top: 0;
+  }
+  to {
+    bottom: 100%;
+  }
+}
+.landing-section {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: black;
+}
+.fex {
+  display: flex;
+  background-color: #000;
+}
+.toolbar {
+  min-height: 10bh;
+  display: flex;
+  flex-direction: column;
+}
+.connect {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  min-width: 12vw;
+}
+.icons {
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 9vh;
+}
+.mint-button {
+  display: flex;
+  justify-content: center;
+}
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  min-width: 12vw;
+}
+.mint {
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  font-family: "Raleway";
+  padding: 5px 12px;
+  color: black;
+  border: 3px solid #4d4646;
+  border-radius: 20px;
+  width: auto;
+  background-color: #38cfb1;
+  z-index: 100;
+  font-weight: bold;
+}
+
+.mint:hover {
+  box-shadow: inset 0 0 10px #000000;
+  cursor: pointer;
+  color: #f2a365;
+}
+.timer {
+  display: flex;
+  flex: column;
+  align-items: center;
+  justify-content: center;
+}
+.timer div:first-child {
+  text-align: center;
+}
+.number {
+  font-family: "CatCafe";
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  color: white;
+}
+.fex {
+  display: flex;
+  flex-direction: column;
+}
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
+  justify-content: center;
+}
+.tree-block {
+  display: flex;
+  justify-content: center;
+}
+.tree {
+  max-height: 50vh;
+  justify-content: flex-end;
+}
+.fa {
+  padding: 30px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+.mission-statement {
+  display: flex;
+  flex-direction: row;
+  min-height: 110vh;
+  max-width: 100vw;
+
+  z-index: 2;
+  background-color: black;
+}
+.our-goal {
+  font-family: "Raleway";
+  font-size: 2rem;
+  font-weight: 900;
+  color: white;
+  display: flex;
+  text-align: left;
+  z-index: 2;
+  padding: 0.1rem 1rem 0.1rem 1rem;
+}
+.goals {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+.logo2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+.images {
+  z-index: 1;
+  display: flex;
+}
+.second-title {
+  font-family: "Alegreya", serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 1rem;
+  position: absolute;
+  max-width: 100vw;
+}
+.explanation {
+  max-width: 100vw;
+  z-index: 1;
+}
+.explanation2 {
+  font-family: "Alegreya", serif;
+  max-width: 100vw;
+  color: white;
+  z-index: 1;
+  padding: 5vh;
+}
+.mission {
+  font-family: "Raleway";
+  white-space: pre-wrap;
+  text-align: justify;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.1rem 1rem 0.1rem 1rem;
+  max-width: 70vw;
+  z-index: 1;
+  color: white;
+}
+.point {
+  font-family: "Raleway";
+  white-space: pre-wrap;
+  text-align: left;
+  line-height: 0.9rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  max-width: 30vw;
+  z-index: 1;
+  text-align: justify;
+}
+.founder-title {
+  font-family: "Raleway";
+  color: white;
+  white-space: pre-wrap;
+  line-height: 4rem;
+  font-size: 4rem;
+  padding: 0.1rem 1rem 0.1rem 1rem;
+  max-width: 100vw;
+  z-index: 1;
+  text-align: center;
+}
+.founder-text {
+  font-family: "Raleway";
+  color: white;
+  white-space: pre-wrap;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  padding: 0.1rem 1rem 0.1rem 1rem;
+  max-width: 30vw;
+  z-index: 1;
+  text-align: justify;
+}
+.founder-name {
+  font-family: "Archivo Black", sans-serif;
+  color: white;
+  white-space: pre-wrap;
+  line-height: 2rem;
+  font-size: 2rem;
+  padding: 0.1rem 1rem 0.1rem 1rem;
+  max-width: 30vw;
+  z-index: 1;
+  text-align: center;
+}
+.about-us-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.left-points {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.roadmap-points {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 1vh;
+}
+.nft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50vw;
+  z-index: 2;
+  max-height: 100vh;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  0% {
+    fill: #ff0000;
+  }
+  50% {
+    fill: #000;
+  }
+  100% {
+    fill: #ff0000;
+  }
+}
+.roadmap {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3efdc;
+}
+.bento-roadmap-containter {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3efdc;
+}
+.third-title {
+  display: flex;
+  justify-content: center;
+  max-width: 70vw;
+}
+.roadmap-title {
+  text-align: center;
+  font-family: "Raleway";
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: inherit;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+
+  max-width: 50vw;
+  max-height: 140vh;
+}
+.left-half {
+  max-width: 30vw;
+  display: flex;
+  flex-wrap: inherit;
+  flex-direction: column;
+  justify-content: stretch;
+  z-index: 1;
+}
+.right-half {
+  min-width: 70vw;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  justify-content: flex-end;
+}
+.list-item {
+  text-align: center;
+  font-size: 1.3rem;
+  list-style-type: circle black;
+  line-height: inherit;
+}
+.bullet-point {
+  min-width: 35vw;
+}
+.falling-apples {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 100vw;
+  z-index: 2;
+}
+.about-us {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+.founders {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.icons2 {
+  display: flex;
+  justify-content: center;
+}
+.copyright {
+  font-family: "Archivo Black", sans-serif;
+  color: white;
+  white-space: pre-wrap;
+  line-height: 2rem;
+  font-size: 1rem;
+  padding: 0.1rem 1rem 0.1rem 1rem;
+  max-width: 30vw;
+  z-index: 1;
+  text-align: justify;
+}
+.filter-green {
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg)
+    brightness(118%) contrast(119%);
+}
+.filter-grey {
+  filter: invert(14%) sepia(5%) saturate(20%) hue-rotate(314deg) brightness(93%)
+    contrast(102%);
+  animation: animate 5s linear infinite;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+.section {
+  display: flex;
+  align-items: inherit;
+  height: 100%;
+}
+@keyframes animate {
+  0% {
+    top: 0%;
+    transform: translateY(0vh);
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    transform: translateY(20vh);
+  }
+  40% {
+    transform: translateY(40vh);
+  }
+  60% {
+    transform: translateY(60vh);
+  }
+  80% {
+    transform: translateY(80vh);
+  }
+  100% {
+    top: 110%;
+    transform: translateY(100h);
+  }
+}
+.garret {
+  max-width: 40vw;
+  max-height: 40vh;
+  border-radius: 20vmax;
+}
+.about-us {
+  min-height: 100vh;
+}
+.green-apple {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nft-apple {
+  max-height: 50vh;
+  max-width: 50vw;
+  border-radius: 20px;
+}
+
+.roadmapImage {
+  min-height: 80vh;
+  min-width: 75vw;
+  z-index: 2;
+}
+
+.bento-roadmap {
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  justify-content: center;
+  background-color: #bbf0fe;
+}
+.bento-title {
+  display: flex;
+  justify-content: center;
+}
+.bento-second-title {
+  font-family: "Alegreya", serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 1rem;
+  position: absolute;
+  max-width: 100vw;
+}
+.bento-goals {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+}
+.bento-point {
+  font-family: "CatCafe";
+  white-space: pre-wrap;
+  text-align: left;
+  line-height: 1.2rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  justify-content: center;
+  z-index: 1;
+  text-align: justify;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.bento-bullet-point {
+  max-width: 50%;
+  padding: 1rem;
+}
+
+.bento-list-item {
+  font-family: "CatCafe";
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: inherit;
+}
+.fex2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8dcf4;
+}
+.bento-tree {
+  min-width: 100vw;
+}
+.bento-mission-statement {
+  display: flex;
+  flex-direction: row;
+  min-height: 110vh;
+  max-width: 100vw;
+  z-index: 2;
+  background-color: black;
+}
+.bento-mission {
+  font-family: "CatCafe";
+  white-space: pre-wrap;
+  text-align: justify;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.1rem 1rem 0.1rem 1rem;
+  max-width: 40vw;
+  z-index: 1;
+  color: white;
+}
+.bento-our-goal {
+  font-family: "CatCafe";
+  font-size: 2rem;
+  font-weight: 900;
+  color: white;
+  display: flex;
+  text-align: left;
+  z-index: 2;
+  padding: 0.1rem 1rem 0.1rem 1rem;
+}
+.nft-bento {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 15vw;
+  z-index: 2;
+  justify-content: center;
+}
+.bento-images {
+  display: flex;
+  width: 45vw;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.img-container {
+  justify-content: flex-end;
+}
+.bento-roadmap-title {
+  text-align: center;
+  font-family: "CatCafe";
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: inherit;
+}
+.nft-calendar {
+  background-color: black;
+}
+.nftcalendarlink {
+  display: flex;
+  justify-content: flex-end;
+}
+.calendar-link {
+  max-height: 10vh;
+}
+.bento-point-link {
+  font-family: "CatCafe";
+  font-size: 1.3rem;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.App-title2 {
+  font-family: "Kamikaze";
+  font-size: 3.5em;
+  font-style: bold;
+  letter-spacing: 0.02em;
+  text-shadow: 3px 3px 5px #333;
+  text-decoration: none;
+  font: white;
+}
+@media (max-width: 1920px) {
+  .bento-our-goal {
+    font-size: 2rem;
+  }
+  .bento-mission {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media (max-width: 1550px) {
+  .bento-our-goal {
+    font-size: 2.1rem;
+  }
+  .bento-mission {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media (max-width: 1440px) {
+  .bento-our-goal {
+    font-size: 2rem;
+  }
+  .bento-mission {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media (max-width: 1250px) {
+  .point {
+    max-width: 90%;
+    font-size: 0.85rem;
+  }
+  .mission-statement {
+    height: 130vh;
+  }
+}
+
+@media (max-width: 1020px) {
+  .mission {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .images {
+    display: none;
+  }
+  .our-goal {
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+  }
+  .section {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .second-title {
+    font-family: "Alegreya", serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    position: absolute;
+    min-width: 100vw;
+  }
+  .goals {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100vw;
+    justify-content: center;
+  }
+  .explanation {
+    max-width: 100vw;
+    padding: 0;
+  }
+  .explanation2 {
+    padding-top: 0;
+    padding-bottom: 3vh;
+  }
+  .mission {
+    font-size: 1rem;
+    max-width: 80vw;
+    text-align: justify;
+  }
+  .second-title {
+    padding: 0;
+  }
+  .our-goal {
+    padding: 0;
+    font-size: 2rem;
+  }
+  .logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 20px;
+  }
+  .mission {
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    max-width: 100vw;
+    font-weight: 1000;
+    padding: 0 5.2vh 0 5.2vh;
+  }
+  .goals {
+    justify-content: flex-start;
+    min-height: 60vh;
+  }
+  .nft {
+    border: none;
+    align-items: flex-end;
+  }
+  .point {
+    padding: 0;
+    max-width: 70vw;
+    font-size: 0.65rem;
+    line-height: 1rem;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .roadmapImage {
+    height: 150vh;
+  }
+  .right-half {
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 75vw;
+  }
+  .left-points {
+    flex-direction: column;
+  }
+  .roadmapImage {
+    min-width: 100vw;
+  }
+  .roadmap-title {
+    font-size: 1.5rem;
+  }
+  .left-half {
+    max-width: 25vw;
+    display: flex;
+    flex-wrap: inherit;
+    flex-direction: column;
+    justify-content: stretch;
+    z-index: 1;
+  }
+  .list-item {
+    font-size: 0.75rem;
+    list-style-type: none;
+    text-align: center;
+    line-height: 0.5rem;
+  }
+  .bullet-point {
+    min-width: 25vw;
+  }
+  .founder-text {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    text-align: center;
+    max-width: 100vw;
+    padding: 5vh;
+    padding-top: 0;
+  }
+  .top-section {
+    min-height: 812px;
+  }
+  .mission-statement {
+    height: 200vh;
+  }
+  .nft-apple {
+    border-radius: 10px;
+    max-height: 30vh;
+    max-width: 30vh;
+  }
+  .founder-name {
+    max-width: 100vw;
+  }
+  .founders {
+    flex-direction: column;
+    min-width: 100vw;
+  }
+  .founder-title {
+    font-size: 2.5rem;
+  }
+  .copyright {
+    text-align: center;
+  }
+  .about-us {
+    min-height: 140vh;
+  }
+  .bento-second-title {
+    padding: 0;
+    width: 100vw;
+    flex-direction: column;
+  }
+  .bento-goals {
+    align-items: center;
+    width: 100vw;
+  }
+  .bento-our-goal {
+    font-size: 3rem;
+  }
+  .bento-mission {
+    max-width: 80vw;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    text-align: center;
+    padding: 0;
+  }
+  .bento-images {
+    width: 100vw;
+    height: 33vh;
+  }
+  .bento-mission-statement {
+    height: 120vh;
+  }
+  .bento-roadmap-title {
+    font-size: 3rem;
+  }
+  .bento-bullet-point {
+    max-width: 100vw;
+  }
+  .bento-list-item {
+    font-size: 2rem;
+  }
+  .bento-point {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  .nft-bento {
+    max-width: 20vw;
+  }
+}
+
+@media (max-width: 670px) {
+  .point {
+    font-size: 0.5rem;
+  }
+  .number {
+    font-size: 1rem;
+    padding: 0.5rem;
+    color: white;
+  }
+}
+@media (max-width: 599px) {
+  .bento-mission-statement {
+    height: 140vh;
+  }
+  .bento-roadmap-containter {
+    height: 220vh;
+  }
+}
+@media (max-width: 540px) {
+  .mission-statement {
+    height: 140vh;
+  }
+  .number {
+    font-size: 0.5rem;
+    padding: 0.5rem;
+    color: white;
+  }
+  .explanation {
+    padding: 0.3rem;
+  }
+  .roadmap {
+    height: 160vh;
+  }
+  .mission {
+    font-size: 0.7rem;
+  }
+  .left-half {
+    display: none;
+  }
+  .right-half {
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    justify-content: flex-start;
+  }
+  .point {
+    font-size: 0.9rem;
+    line-height: 1rem;
+    font-weight: bolder;
+  }
+  .third-title {
+    max-height: 10vh;
+    height: 10vh;
+  }
+  .list-item {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 505px) {
+  .bento-images {
+    height: 50vh;
+  }
+  .bento-mission-statement {
+    height: 200vh;
+  }
+  .bento-our-goal {
+    font-size: 2.5rem;
+  }
+  .bento-mission {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 490px) {
+  .roadmap {
+    min-height: 170vh;
+  }
+  .mission-statement {
+    height: 150vh;
+  }
+}
+@media (max-width: 475px) {
+  .roadmap {
+    min-height: 180vh;
+  }
+  .mission-statement {
+    height: 160vh;
+  }
+
+  .number {
+    font-size: 0.3rem;
+    padding: 0.5rem;
+    color: white;
+  }
+}
+@media (max-width: 450px) {
+  .roadmap {
+    min-height: 200vh;
+  }
+  .timer {
+    width: 30vw;
+  }
+}
+@media (max-width: 425px) {
+  .roadmap {
+    min-height: 200vh;
+  }
+  .mission-statement {
+    height: 200vh;
+  }
+  .timer {
+    width: 18vw;
+  }
+  .hideLaunch {
+    display: none;
+  }
+  .number {
+    font-size: 0.3rem;
+    padding: 0.4rem;
+    color: white;
+  }
+}
+@media (max-width: 415px) {
+  .bento-mission-statement {
+    height: 200vh;
+  }
+  .bento-our-goal {
+    font-size: 1.75rem;
+  }
+  .bento-mission {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 400px) {
+  .roadmap {
+    min-height: 200vh;
+  }
+  .mission-statement {
+    height: 200vh;
+  }
+  .number {
+    font-size: 0.2rem;
+    padding: 0.3rem;
+    color: white;
+  }
+}
+@media (max-width: 360px) {
+  .roadmap {
+    min-height: 250vh;
+  }
+  .mission-statement {
+    height: 230vh;
+  }
+}
+@media (max-width: 340px) {
+  .bento-mission-statement {
+    height: 250vh;
+  }
+  .number {
+    font-size: 0.15rem;
+  }
+}
+.twitch {
+  display: flex;
+  justify-content: center;
+}
